@@ -372,6 +372,37 @@ button{
 
 
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .blogs-container {
+    padding-top: 5vh; /* Adjust padding-top for smaller screens */
+  }
+
+  .blog-card {
+    max-width: 100%; /* Make each blog card take full width on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
