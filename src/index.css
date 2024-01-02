@@ -372,8 +372,72 @@ button{
 
 
 
-/* Media query for smaller screens */
+
+
+
+
+
+
+/* Blogs.css */
 @media (max-width: 768px) {
+.blogs-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 10vh; /* Adjust padding-top for smaller screens */
+}
+
+.blog-card {
+  width: 100%; /* Make each blog card take full width on smaller screens */
+  max-width: 300px; /* Set a max-width to control the card's width */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+  opacity: 0;
+  transform: scale(0);
+  animation: zoomInOut 22s infinite;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.blog-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.blog-card:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.blog-card:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.blog-card:nth-child(4) {
+  animation-delay: 6s;
+}
+
+/* Media query for smaller screens */
+
   .blogs-container {
     padding-top: 5vh; /* Adjust padding-top for smaller screens */
   }
@@ -382,6 +446,7 @@ button{
     max-width: 100%; /* Make each blog card take full width on smaller screens */
   }
 }
+
 
 
 
