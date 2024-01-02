@@ -594,3 +594,12 @@ button{
     margin-bottom: 10px; /* Add spacing between links */
   }
 }
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .blog-card {
+    width: calc(100% - 40px); /* Make the blog card take full width with some margin on smaller screens */
+  }
+}
