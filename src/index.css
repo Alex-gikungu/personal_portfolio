@@ -597,16 +597,20 @@ button{
 
 
 
-/* Media query for smaller screens */
-@media (min-width: 480px) {
-  .blog-card {
-    width: calc(50% - 20px); /* Make the blog cards take 50% width on screens larger than 480px */
-  }
-}
 
-/* Media query for larger screens */
+/* Media query for smaller screens */
 @media (min-width: 768px) {
-  .blog-card {
-    width: calc(33.333% - 20px); /* Make the blog cards take 33.333% width on screens larger than 768px */
+  .contact-container {
+    flex-direction: row; /* Arrange elements in a row on larger screens */
+    justify-content: space-around; /* Add space around elements */
+  }
+
+  .two {
+    flex-direction: row; /* Arrange 'two' elements in a row on larger screens */
+  }
+
+  .address,
+  .touch {
+    margin: 0; /* Reset margin for larger screens */
   }
 }
