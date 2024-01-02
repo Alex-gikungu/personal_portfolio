@@ -1,0 +1,580 @@
+/* Links.css */
+
+.links-container {
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space below the links */
+  }
+  
+  .links-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around; /* Spread links evenly */
+    width: 60%; /* Ensure the links take full width */
+  }
+  
+  .link-item {
+    margin: 0 10px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .link-item a {
+    display: block;
+    padding: 10px;
+    background-color: #ddd; /* Dull color for the link boxes */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+  }
+  
+  .link-item:hover {
+    transform: rotate(360deg);
+    background-color: #aaa; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+
+
+
+
+
+/* Add this to your existing CSS or in a separate file */
+
+.cover-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    height: 100vh;
+  }
+   .cover-section p {
+    color: black;
+   }
+  .text-content {
+    max-width: 50%;
+    padding: 20px;
+    color:rgb(78, 104, 151)97 /* Text color */
+  }
+  
+  .profile-image {
+    width: 30%; /* Adjust the width to make the image smaller */
+    height: 60%; /* Set the height equal to the width for a circular shape */
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden;
+    margin-right: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0.5, 0, 1.0); 
+  }
+  
+/* 
+.home{
+    background-color:cornflowerblue;
+} */
+
+/* Add this to your existing CSS or in a separate file */
+
+.info-bubble {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust as needed for spacing */
+  }
+  
+  .info-bubble h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .info-bubble p {
+    font-size: 1em;
+    color:black;
+  }
+  
+
+
+
+.rotating {
+  animation: rotate 20s infinite linear; /* Adjust the duration and other properties as needed */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* Add this to your existing CSS file or create a new one */
+.mode-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mode-switch label {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.mode-switch input {
+  margin-right: 5px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+/* Add any additional styling for dark mode as needed */
+
+
+
+
+
+
+
+
+  
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+  }
+  
+  .card h2 {
+    color: #333;
+  }
+  
+  .card ul, .card p {
+    color: #555;
+  }
+  
+  /* contacts section */
+
+
+button{
+    display: flex;
+    width: 100px;
+    border-radius: 8px;
+    padding: 16px;
+    height: 50px;
+    background-color: #3498db;
+    margin-top:10px;
+    margin-left: 35%;
+}
+
+
+.about{
+
+  display: grid;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
+.about h2{
+  text-align: center;
+  color: #333;
+}
+.about img{
+  width: 60px;
+  display: grid;
+}
+
+/* About.css */
+
+.about-container {
+  color: #333;
+  font-weight:400px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+/* Contacts.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.address {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.two{
+  display:grid;
+}
+.touch{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+/* .address {
+  display:flex;
+  gap: 10px;
+} */
+
+/* Add more styles as needed */
+.conts{
+  display:flex;
+  padding: 10px;
+  font-size: medium;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* .touch{
+  float: right;
+  margin-right:80px;
+} */
+.mess{
+  width: 220px;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 120px;
+  resize: vertical;
+  font-weight: 600;
+  font-size: 1.5 rem;
+}
+
+
+
+
+
+
+
+
+/* Blogs.css */
+
+.blogs-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 20vh;
+}
+
+.blog-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+  opacity: 0;
+  transform: scale(0);
+  animation: zoomInOut 22s infinite; /* Animation effect */
+  position: relative; /* Set position to relative for sequential animation */
+
+  /* Additional styles for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.blog-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.blog-card:nth-child(2) {
+  animation-delay: 2s; /* Delay for the second card */
+}
+
+.blog-card:nth-child(3) {
+  animation-delay: 4s; /* Delay for the third card */
+}
+
+.blog-card:nth-child(4) {
+  animation-delay: 6s; /* Delay for the fourth card */
+}
+
+
+
+
+
+
+
+
+
+/* Services.css */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.project-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.project-info button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.project-info button:hover {
+  background-color: #2980b9;
+}
+
+.project-info a {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blogs.css */
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.blog-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #f39c12;
+}
+
+.blog-icon {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.clients h1{
+  text-align: center;
+  font-family: serif;
+}
+
+
+
+/* Add this to your About.css file */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.about {
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 15px;
+  background-color: #ddd;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 100%;
+  width: 80%; /* Increased width for a larger progress bar */
+  background-color: #4caf50; /* Green color for the progress bar */
+  border-radius: 5px;
+}
+
+.skill-item img {
+  width: 80px; /* Adjust the width of the skill icons */
+  height: 80px; /* Adjust the height of the skill icons */
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* Add any additional styling for other sections as needed */
+
+
+
+
+/* Footer.css */
+.footer {
+  /* background-color: #333; */
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+.footer-icons a:hover {
+  background-color: #ddd;
+}
+
+
+/* Footer.css */
+/* Your existing styles */
+.footer-text {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-text p {
+  font-size: 14px;
+}
+
+.ser h1{
+  text-align: center;
+  font-family:serif;
+}
