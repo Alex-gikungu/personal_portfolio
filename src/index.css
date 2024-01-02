@@ -76,7 +76,7 @@
   @media (max-width: 768px) {
     .profile-image {
       width:30%;
-      height: 30%; /* Make each address take full width on small screens */
+      height: 20%; /* Make each address take full width on small screens */
     }
   }
 
