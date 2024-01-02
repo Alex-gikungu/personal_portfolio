@@ -599,18 +599,13 @@ button{
 
 
 /* Media query for smaller screens */
-@media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row; /* Arrange elements in a row on larger screens */
-    justify-content: space-around; /* Add space around elements */
-  }
-
+@media (max-width: 768px) {
   .two {
-    flex-direction: row; /* Arrange 'two' elements in a row on larger screens */
+    flex-direction: column; /* Stack the address sections vertically on smaller screens */
   }
 
-  .address,
-  .touch {
-    margin: 0; /* Reset margin for larger screens */
+  .address {
+    width: 100%; /* Make each address take full width on small screens */
+    margin-bottom: 10px; /* Adjust margin for better spacing on small screens */
   }
 }
