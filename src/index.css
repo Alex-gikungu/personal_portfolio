@@ -597,9 +597,8 @@ button{
 
 
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .blog-card {
-    width: calc(100% - 40px); /* Make the blog card take full width with some margin on smaller screens */
+    width: 100%; /* Make the blog card take full width on smaller screens */
   }
 }
