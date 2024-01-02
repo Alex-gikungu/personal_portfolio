@@ -597,8 +597,16 @@ button{
 
 
 
-@media (max-width: 768px) {
+/* Media query for smaller screens */
+@media (min-width: 480px) {
   .blog-card {
-    width: 100%; /* Make the blog card take full width on smaller screens */
+    width: calc(50% - 20px); /* Make the blog cards take 50% width on screens larger than 480px */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .blog-card {
+    width: calc(33.333% - 20px); /* Make the blog cards take 33.333% width on screens larger than 768px */
   }
 }
