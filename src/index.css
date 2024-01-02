@@ -71,7 +71,15 @@
     margin-right: 10%;
     box-shadow: 0 4px 8px rgba(0, 0.5, 0, 1.0); 
   }
-  
+
+
+  @media (max-width: 768px) {
+    .profile-image {
+      width:30%; /* Make each address take full width on small screens */
+    }
+  }
+
+
 /* 
 .home{
     background-color:cornflowerblue;
@@ -605,13 +613,6 @@ button{
   flex-direction: column; /* Stack the children vertically */
   align-items: center; /* Center the children horizontally */
 }
-/* 
-.touch {
-  width: 100%;
-  max-width: 400px; 
-  text-align: center; 
-  margin-bottom: 20px; 
-} */
 
 .two {
   display: flex;
