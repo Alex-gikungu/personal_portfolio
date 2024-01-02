@@ -5,14 +5,14 @@ import Footer from './Footer';
 // import './About.css'; 
 
 const skills = [
-  { name: 'HTML', percentage: 90 },
-  { name: 'CSS', percentage: 85 },
+  { name: 'HTML', percentage: 95 },
+  { name: 'CSS', percentage: 90 },
   { name: 'Bootstrap', percentage: 80 },
-  { name: 'JavaScript', percentage: 85 },
-  { name: 'React', percentage: 80 },
-  { name: 'Python', percentage: 75 },
-  { name: 'Flask', percentage: 70 },
-  { name: 'C', percentage: 65 },
+  { name: 'JavaScript', percentage: 90 },
+  { name: 'React', percentage: 85 },
+  { name: 'Python', percentage: 80 },
+  { name: 'Flask', percentage: 80 },
+  { name: 'C', percentage: 70 },
 ];
 
 const About = () => {
@@ -64,7 +64,9 @@ const About = () => {
         <div className="about">
           <h2>Soft Skills</h2>
           <ul>
-            <li>Collaboration</li>
+            <li>Problem solving</li>
+            <li>Team Collaboration</li>
+            <li>Creativity</li>
             {/* Add more soft skills as needed */}
           </ul>
         </div>

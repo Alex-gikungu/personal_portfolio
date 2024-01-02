@@ -211,7 +211,9 @@ button{
   width: 60px;
   display: grid;
 }
-
+.about ul li{
+  list-style:none;
+}
 /* About.css */
 
 .about-container {
