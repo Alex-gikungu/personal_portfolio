@@ -580,3 +580,17 @@ button{
   text-align: center;
   font-family:serif;
 }
+
+/* media query  */
+
+
+@media (max-width: 768px) {
+  .links-list {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center; /* Center align links */
+  }
+
+  .link-item {
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+}
