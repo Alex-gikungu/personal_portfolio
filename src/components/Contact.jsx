@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import Links from './Links';
 import Footer from './Footer';
-// import './Contacts.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -19,112 +20,111 @@ const Contacts = () => {
     });
   };
 
- // ... (previous code)
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+    if (
+      !formData.fullName.trim() ||
+      !formData.email.trim() ||
+      !formData.subject.trim() ||
+      !formData.message.trim()
+    ) {
+      alert('Please fill in all input fields');
+      return;
+    }
 
-  // Check if any input field is empty
-  if (
-    !formData.fullName.trim() ||
-    !formData.email.trim() ||
-    !formData.subject.trim() ||
-    !formData.message.trim()
-  ) {
-    alert('Please fill in all input fields');
-    return;
-  }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
 
-  // Validate email format
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(formData.email)) {
-    alert('Please enter a valid email address');
-    return;
-  }
+    console.log('Form Data:', formData);
 
-  // Log the form data to the console for now
-  console.log('Form Data:', formData);
+    setFormData({
+      fullName: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
 
-  // Clear the form after submission
-  setFormData({
-    fullName: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  // Display an alert when the submit button is clicked
-  alert('Request submitted successfully!');
-};
-
-// ... (remaining code)
-
+    alert('Request submitted successfully!');
+  };
 
   return (
     <>
       <Links />
-      <div className='contact-container'>
-        <div className='two'>
-          <div className='address'>
-            <h3>Contacts</h3>
-            <p>(+254) 112043557</p>
-            <p>(+254) 104007688</p>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-6">
+            <h3 className="mb-4">Contact Information</h3>
+            <div className="mb-3">
+              <h4>Phone</h4>
+              <p>(+254) 112043557</p>
+              <p>(+254) 104007688</p>
+            </div>
+            <div className="mb-3">
+              <h4>Email</h4>
+              <p>alexigikungu.012@gmail.com</p>
+              <p>alegikungu.012@gmail.com</p>
+            </div>
           </div>
-
-          <div className='address'>
-            <h3>Email</h3>
-            <p>alexigikungu.012@gmail.com</p>
-            <p>alegikungu.012@gmail.com</p>
+          <div className="col-md-6">
+            <h3 className="mb-4">Get In Touch</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Full Name"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  className="form-control"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                  title="Please enter a valid email address"
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <textarea
+                  className="form-control"
+                  placeholder="Message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onMouseOver={() => console.log('Mouse over!')}
+              >
+                Submit
+              </button>
+            </form>
           </div>
-        </div>
-
-        <div className='touch'>
-          <h2>Get In Touch</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              className='conts'
-              type='text'
-              placeholder='Full names'
-              name='fullName'
-              value={formData.fullName}
-              onChange={handleInputChange}
-            />
-            <input
-              className='conts'
-              type='text'
-              placeholder='Email'
-              name='email'
-              value={formData.email}
-              onChange={handleInputChange}
-              pattern='[^\s@]+@[^\s@]+\.[^\s@]+'
-              title='Please enter a valid email address'
-            />
-            <input
-              className='conts'
-              type='text'
-              placeholder='Subject'
-              name='subject'
-              value={formData.subject}
-              onChange={handleInputChange}
-            />
-            <textarea
-              className='mess'
-              placeholder='Message'
-              name='message'
-              value={formData.message}
-              onChange={handleInputChange}
-            ></textarea>
-            <button
-              type='submit'
-              onClick={() =>(handleSubmit)}
-              onMouseOver={() => console.log('Mouse over!')}
-            >
-              Submit
-            </button>
-          </form>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

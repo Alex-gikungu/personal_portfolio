@@ -1,730 +1,555 @@
-/* Links.css */
-
 .links-container {
-    background-color: #3498db;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Add some space below the links */
-  }
-  
-  .links-list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    justify-content: space-around; /* Spread links evenly */
-    width: 60%; /* Ensure the links take full width */
-  }
-  
-  .link-item {
-    margin: 0 10px;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .link-item a {
-    display: block;
-    padding: 10px;
-    background-color: #ddd; /* Dull color for the link boxes */
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
-  }
-  
-  .link-item:hover {
-    transform: rotate(360deg);
-    background-color: #aaa; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
-  }
-  
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
+.links-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  width: 60%;
+}
 
+.link-item {
+  margin: 0 10px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
 
+.link-item a {
+  display: block;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.link-item:hover {
+  transform: rotate(360deg);
+  background-color: #aaa;
+  color: #fff;
+}
 
-/* Add this to your existing CSS or in a separate file */
 
 .cover-section {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 100vh;
-  }
-   .cover-section p {
-    color: black;
-   }
-  .text-content {
-    max-width: 50%;
-    padding: 20px;
-    color:rgb(78, 104, 151)97 /* Text color */
-  }
-  
-  .profile-image {
-    width: 30%; /* Adjust the width to make the image smaller */
-    height: 60%; /* Set the height equal to the width for a circular shape */
-    border-radius: 50%; /* Create a circular shape */
-    overflow: hidden;
-    margin-right: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0.5, 0, 1.0); 
-  }
-
-
-  @media (max-width: 768px) {
-    .profile-image {
-      width:30%;
-      height: 20%; /* Make each address take full width on small screens */
-    }
-  }
-
-
-/* 
-.home{
-    background-color:cornflowerblue;
-} */
-
-/* Add this to your existing CSS or in a separate file */
-
-.info-bubble {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Adjust as needed for spacing */
-  }
-  
-  .info-bubble h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .info-bubble p {
-    font-size: 1em;
-    color:black;
-  }
-  
-
-
-
-.rotating {
-  animation: rotate 20s infinite linear; /* Adjust the duration and other properties as needed */
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-
-
-/* Add this to your existing CSS file or create a new one */
-.mode-switch {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.mode-switch label {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: #333;
+  height: 100vh;
 }
 
-.mode-switch input {
-  margin-right: 5px;
-}
-
-.dark-mode {
-  background-color: #333;
-  color: white;
-}
-
-/* Add any additional styling for dark mode as needed */
-
-
-
-
-
-
-
-
-  
-.about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    width: 250px;
-  }
-  
-  .card h2 {
-    color: #333;
-  }
-  
-  .card ul, .card p {
-    color: #555;
-  }
-  
-  /* contacts section */
-
-
-button{
-    display: flex;
-    width: 100px;
-    border-radius: 8px;
-    padding: 16px;
-    height: 50px;
-    background-color: #3498db;
-    margin-top:10px;
-    margin-left: 35%;
-}
-
-
-.about{
-
-  display: grid;
-  background-color: #fff;
+.text-content {
+  max-width: 50%;
   padding: 20px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0.5, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .text-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .profile-image {
+      width: 150px;
+      height: 150px;
+  }
+
+  .profile-image-container {
+      margin-top: 20px;
+  }
+}
+
+
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+
+.skill-item img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2); 
+}
+
+.skill-item h5 {
+  transition: color 0.3s ease;
+}
+
+.skill-item:hover h5 {
+  color: #3498db; 
+}
+
+.btn-success:hover {
+  background-color: #28a745;
+  box-shadow: 0 0 10px #28a745; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+.jumbotron:hover h1 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ffeb3b; 
+}
+
+
+
+
+/* Container styling */
+.projects-container, .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+/* Card styling */
+.project-card, .service-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover, .service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.project-image, .service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-image, .service-card:hover .service-image {
+  opacity: 0.8;
+}
+
+/* Contact button styling */
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #128c7e;
+}
+/* Testimonials Section */
+.testimonials-container {
+  background-color: #f7f9fc;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Adjust as needed for spacing */
 }
-.about h2{
-  text-align: center;
-  color: #333;
-}
-.about img{
-  width: 60px;
-  display: grid;
-}
-.about ul li{
-  list-style:none;
-}
-/* About.css */
 
-.about-container {
+.testimonials-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
   color: #333;
-  font-weight:400px;
-  max-width: 800px;
-  margin: 0 auto;
+  font-weight: 600;
+}
+
+.testimonial-card {
+  background-color: #fff;
   padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Add more styles as needed */
+.testimonial-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 
 
+/* Contact section styling */
+.contact-section {
+  text-align: center;
+  margin-top: 40px;
+}
 
+.contact-section h2 {
+  margin-bottom: 20px;
+}
 
 
 /* Contacts.css */
 
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
+.container {
+  margin-top: 3rem;
 }
 
-.address {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.two{
-  display:grid;
-}
-.touch{
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-
-}
-/* .address {
-  display:flex;
-  gap: 10px;
-} */
-
-/* Add more styles as needed */
-.conts{
-  display:flex;
-  padding: 10px;
-  font-size: medium;
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* .touch{
-  float: right;
-  margin-right:80px;
-} */
-.mess{
-  width: 220px;
-  border-radius: 8px;
-  margin-top: 20px;
-  height: 120px;
-  resize: vertical;
+h3 {
+  font-size: 2rem;
   font-weight: 600;
-  font-size: 1.5 rem;
 }
 
-
-
-
-
-
-
-
-/* Blogs.css */
-
-.blogs-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 20px;
-  height: 100vh;
-  overflow: hidden;
-  padding-top: 20vh;
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-.blog-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 0 10px;
-  opacity: 0;
-  transform: scale(0);
-  animation: zoomInOut 22s infinite; /* Animation effect */
-  position: relative; /* Set position to relative for sequential animation */
-
-  /* Additional styles for centering */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.form-control {
+  border-radius: 0.25rem;
 }
 
-@keyframes zoomInOut {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.blog-card:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.blog-card:nth-child(2) {
-  animation-delay: 2s; /* Delay for the second card */
-}
-
-.blog-card:nth-child(3) {
-  animation-delay: 4s; /* Delay for the third card */
-}
-
-.blog-card:nth-child(4) {
-  animation-delay: 6s; /* Delay for the fourth card */
-}
-
-
-
-
-
-
-
-
-
-
-/* Blogs.css */
-@media (max-width: 768px) {
-.blogs-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 20px;
-  height: 100vh;
-  overflow: hidden;
-  padding-top: 10vh; /* Adjust padding-top for smaller screens */
-}
-
-.blog-card {
-  width: 100%; /* Make each blog card take full width on smaller screens */
-  max-width: 300px; /* Set a max-width to control the card's width */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 0 10px;
-  opacity: 0;
-  transform: scale(0);
-  animation: zoomInOut 22s infinite;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-@keyframes zoomInOut {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.blog-card:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.blog-card:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.blog-card:nth-child(3) {
-  animation-delay: 4s;
-}
-
-.blog-card:nth-child(4) {
-  animation-delay: 6s;
-}
-
-/* Media query for smaller screens */
-
-  .blogs-container {
-    padding-top: 5vh; /* Adjust padding-top for smaller screens */
-  }
-
-  .blog-card {
-    max-width: 100%; /* Make each blog card take full width on smaller screens */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Services.css */
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-.project-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-}
-
-.project-info {
-  padding: 20px;
-}
-
-.project-info h3 {
-  margin-bottom: 10px;
-}
-
-.project-info button {
-  background-color: #3498db;
-  color: #fff;
+.btn-primary {
+  background-color: #25d366;
   border: none;
-  text-align: center;
-  padding: 8px 16px;
-  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.project-info button:hover {
-  background-color: #2980b9;
+.btn-primary:hover {
+  background-color: #128c7e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.project-info a {
-  display: block;
-  margin-top: 10px;
-  color: #3498db;
-  text-decoration: none;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Blogs.css */
-
-.blogs-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-.blog-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  padding: 20px;
-}
-
-.blog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.stars {
-  color: #f39c12;
-}
-
-.blog-icon {
-  font-size: 24px;
-  margin-top: 10px;
-}
-.clients h1{
-  text-align: center;
-  font-family: serif;
-}
-
-
-
-/* Add this to your About.css file */
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.about {
-  width: 300px; /* Adjust the width as needed */
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.skill-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.skill-item {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.progress-bar {
-  height: 15px;
-  background-color: #ddd;
-  margin-top: 10px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.progress-bar div {
-  height: 100%;
-  width: 80%; /* Increased width for a larger progress bar */
-  background-color: #4caf50; /* Green color for the progress bar */
-  border-radius: 5px;
-}
-
-.skill-item img {
-  width: 80px; /* Adjust the width of the skill icons */
-  height: 80px; /* Adjust the height of the skill icons */
-  object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
-
-/* Add any additional styling for other sections as needed */
-
-
 
 
 /* Footer.css */
-.footer {
-  /* background-color: #333; */
-  background-color: #3498db;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer {
+  background-color: #343a40;
 }
 
 .footer-icons a {
-  text-decoration: none;
-  color: black;
-  margin: 0 10px;
-  border-radius: 50%;
-  background-color: white;
-  padding: 10px;
-  display: inline-block;
+  transition: color 0.3s;
 }
 
 .footer-icons a:hover {
-  background-color: #ddd;
-}
-
-
-/* Footer.css */
-/* Your existing styles */
-.footer-text {
-  margin-top: 20px;
-  text-align: center;
-  color: white;
+  color: #007bff;
 }
 
 .footer-text p {
-  font-size: 14px;
+  margin: 0;
 }
 
-.ser h1{
+
+/* Links.css */
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+
+
+/* General Background Styles */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(8px); /* Blur effect */
+  z-index: -1;
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Ensure text is readable on top of the blurred background */
+  padding: 60px 20px;
+}
+
+
+/* General Background Styles */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(8px); /* Blur effect */
+  z-index: -1;
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Ensure text is readable on top of the blurred background */
+  padding: 60px 20px;
+}
+
+
+
+
+
+/* Home.css */
+
+.main-content {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
   text-align: center;
-  font-family:serif;
+  position: relative;
+  overflow: hidden;
 }
 
-/* media query  */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(10px); /* Blur effect */
+  z-index: -1;
+}
 
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-@media (max-width: 768px) {
-  .links-list {
-    flex-direction: column; /* Stack links vertically on smaller screens */
-    align-items: center; /* Center align links */
-  }
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
 
-  .link-item {
-    margin-bottom: 10px; /* Add spacing between links */
-  }
+/* About Section */
+.about-section {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 60px 20px;
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: -1;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services-section {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 60px 20px;
+  position: relative;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: -1;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 60px 20px;
+  position: relative;
+}
+
+.portfolio-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: -1;
+}
+
+.portfolio-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 60px 20px;
+  position: relative;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: -1;
+}
+
+.contact-section h2,
+.contact-section p {
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #0056b3;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #6c757d;
 }
 
 
-
-
-/* Add these styles in your CSS file or in your component (e.g., Contacts.css) */
-@media (max-width: 768px) {
-.contact-container {
-  display: flex;
-  flex-direction: column; /* Stack the children vertically */
-  align-items: center; /* Center the children horizontally */
-}
-
-.two {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Add space between the two address divs */
-}
-
-.address {
-  width: calc(50% - 10px); /* Make each address take 50% width with some margin */
-  margin-bottom: 10px; /* Add some margin between the address divs */
-}
-
-/* Media query for smaller screens */
-
-  .address {
-    width: 100%; /* Make each address take full width on small screens */
-  }
-}
